@@ -19,8 +19,8 @@ I define strict semantic versioning by four tests:
 
 |           |How to run        |3-part versions |Releases first |Numeric prereleases |Build metadata |
 |-----------|:----------------:|:--------------:|:-------------:|:------------------:|:-------------:|
-|npm, bower |cd js && npm test | ![PASS][pass]  | PASS          | PASS               | PASS          |
-|rubygems   |cd ruby && rake   | FAIL           | PASS          | PASS               | ![FAIL](https://github.com/bbyars/semver-compliance/blob/master/images/fail.png?raw=true "FAIL") |
+|npm, bower |cd js && npm test | ![PASS][pass]  | ![PASS][pass] | ![PASS][pass]      | ![PASS][pass] |
+|rubygems   |cd ruby && rake   | ![FAIL][fail]  | ![PASS][pass] | ![PASS][pass]      | ![FAIL][fail] |
 
 
 [pass]: https://github.com/bbyars/semver-compliance/blob/master/images/success.png?raw=true "PASS"
