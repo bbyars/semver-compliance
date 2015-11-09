@@ -9,19 +9,19 @@ versioning and continuous delivery.
 
 I define strict semantic versioning by four tests:
 
-* *3-part versions* - 1.2.3.4 is an error (no four part versions allowed)
-* *Releases first* - 1.2.3 > 1.2.3-10 (releases take precedence over pre-releases)
-* *Numeric prereleases* - 1.2.3-10 > 1.2.3-9 (all-numeric prereleases are sorted numerically; a change from semver 1.0)
-* *Build metadata* - 1.2.3+10 == 1.2.3+9 (build metadata has no bearing on version precedence)
+* **3-part versions** - 1.2.3.4 is an error (no four part versions allowed)
+* **Releases first** - 1.2.3 > 1.2.3-10 (releases take precedence over pre-releases)
+* **Numeric prereleases** - 1.2.3-10 > 1.2.3-9 (all-numeric prereleases are sorted numerically; a change from semver 1.0)
+* **Build metadata** - 1.2.3+10 == 1.2.3+9 (build metadata has no bearing on version precedence)
 
 
 ## Test Results
 
 |           |How to run        |3-part versions |Releases first |Numeric prereleases |Build metadata |
 |-----------|:----------------:|:--------------:|:-------------:|:------------------:|:-------------:|
-|npm, bower |cd js && npm test | ![pass][pass]  | PASS          | PASS               | PASS          |
-|rubygems   |cd ruby && rake   | FAIL           | PASS          | PASS               | FAIL          |
+|npm, bower |cd js && npm test | ![PASS][pass]  | PASS          | PASS               | PASS          |
+|rubygems   |cd ruby && rake   | FAIL           | PASS          | PASS               | ![FAIL](https://github.com/bbyars/semver-compliance/blob/master/images/fail.png?raw=true "FAIL") |
 
 
-[pass]: https://github.com/bbyars/semver-compliance/images/success.png "Pass"
-[fail]: https://github.com/bbyars/semver-compliance/images/fail.png "Fail"
+[pass]: https://github.com/bbyars/semver-compliance/blob/master/images/success.png?raw=true "PASS"
+[fail]: https://github.com/bbyars/semver-compliance/blob/master/images/fail.png?raw=true "FAIL"
