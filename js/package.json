@@ -1,0 +1,16 @@
+{
+  "name": "semver-compliance",
+  "version": "1.0.0",
+  "description": "Tests compliance against the semver 2.0 spec",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/_mocha test.js"
+  },
+  "author": "Brandon Byars <brandon.byars@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.6.5",
+    "mocha": "^2.3.3",
+    "semver": "^5.0.3"
+  }
+}
