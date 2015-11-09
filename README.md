@@ -9,20 +9,21 @@ versioning and continuous delivery.
 
 I define strict semantic versioning by four tests:
 
-* 1.2.3.4 is an error (no four part versions allowed)
-* 1.2.3 > 1.2.3-10 (releases take precedence over pre-releases)
-* 1.2.3-10 > 1.2.3-9 (all-numeric prereleases are sorted numerically; a change from semver 1.0)
-* 1.2.3+10 == 1.2.3+9 (build metadata has no bearing on version precedence)
+* *3-part versions* - 1.2.3.4 is an error (no four part versions allowed)
+* *Releases first* - 1.2.3 > 1.2.3-10 (releases take precedence over pre-releases)
+* *Numeric prereleases* - 1.2.3-10 > 1.2.3-9 (all-numeric prereleases are sorted numerically; a change from semver 1.0)
+* *Build metadata* - 1.2.3+10 == 1.2.3+9 (build metadata has no bearing on version precedence)
 
-## Running the Tests
-
-|npm, bower        |rubygems        |
-|:----------------:|:--------------:|
-|cd js && npm test |cd ruby && rake |
 
 ## Test Results
 
-|           |1.2.3.4 is an error |1.2.3 > 1.2.3-10 |1.2.3-10 > 1.2.3-9 |1.2.3+10 == 1.2.3+9 |
-|-----------|:------------------:|:---------------:|:-----------------:|:------------------:|
-|npm, bower | PASS               | PASS            | PASS              | PASS               |
-|rubygems   | FAIL               | PASS            | PASS              | FAIL               |
+|           |How to run        |3-part versions |Releases first |Numeric prereleases |Build metadata |
+|-----------|:----------------:|:--------------:|:-------------:|:------------------:|:-------------:|
+|npm, bower |cd js && npm test | ![pass]        | PASS          | PASS               | PASS          |
+|rubygems   |cd ruby && rake   | FAIL           | PASS          | PASS               | FAIL          |
+
+
+[pass]: https://github.com/bbyars/semver-compliance/images/success.png "Pass"
+[fail]: https://github.com/bbyars/semver-compliance/images/fail.png "Fail"
+
+[![how it works](https://github.com/bbyars/mountebank/blob/master/src/public/images/overview.gif?raw=true)](https://github.com/bbyars/mountebank/blob/master/src/public/images/overview.gif?raw=true)
