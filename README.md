@@ -17,10 +17,11 @@ I define strict semantic versioning by four tests:
 
 ## Test Results
 
-|           |How to run        |3-part versions |Releases first |Numeric prereleases |Build metadata |
-|-----------|:----------------:|:--------------:|:-------------:|:------------------:|:-------------:|
-|npm, bower |cd js && npm test | ![PASS][pass]  | ![PASS][pass] | ![PASS][pass]      | ![PASS][pass] |
-|rubygems   |cd ruby && rake   | ![FAIL][fail]  | ![PASS][pass] | ![PASS][pass]      | ![FAIL][fail] |
+|           |How to run                        |3-part versions |Releases first |Numeric prereleases |Build metadata |
+|-----------|:--------------------------------:|:--------------:|:-------------:|:------------------:|:-------------:|
+|npm, bower |cd js && npm test                 | ![PASS][pass]  | ![PASS][pass] | ![PASS][pass]      | ![PASS][pass] |
+|rubygems   |cd ruby && bundle install && rake | ![FAIL][fail]  | ![PASS][pass] | ![PASS][pass]      | ![FAIL][fail] |
+|cocaopods  |cd ruby && bundle install && rake | ![FAIL][fail]  | ![FAIL][fail] | ![PASS][pass]      | ![FAIL][fail] |
 
 
 [pass]: https://github.com/bbyars/semver-compliance/blob/master/images/success.png?raw=true "PASS"

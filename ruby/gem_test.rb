@@ -1,7 +1,7 @@
 require 'test/unit'
 require 'rubygems'
 
-class SemverTest < Test::Unit::TestCase
+class GemTest < Test::Unit::TestCase
   def test_four_part_versions_should_error
     #FAILS
     assert_raise do

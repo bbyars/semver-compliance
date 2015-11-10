@@ -1,14 +1,33 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (4.2.4)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    cocoapods-core (0.39.0)
+      activesupport (>= 4.0.2)
+      fuzzy_match (~> 2.0.4)
+      nap (~> 1.0)
+    fuzzy_match (2.0.4)
+    i18n (0.7.0)
+    json (1.8.3)
+    minitest (5.8.2)
+    nap (1.0.0)
     power_assert (0.2.2)
     test-unit (3.0.8)
       power_assert
+    thread_safe (0.3.5)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  cocoapods-core
   test-unit
 
 BUNDLED WITH
